@@ -14,4 +14,3 @@
     $next_movie_data,
     ["until_message" => $next_movie->get_until_message()]
 )) ?>
-<?php render_template('styles') ?>
