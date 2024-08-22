@@ -18,10 +18,10 @@
             $days = $this->days_until;
 
             return match(true) {
-                $days === 0     => "The premiere is today",
-                $days === 1     => "The premiere is tomorrow",
-                $days < 7       => "The premiere is within the next 7 days.",
-                $days <30       => "The premiere is within the next 30 days.",
+                $days === 0     => "today",
+                $days === 1     => "tomorrow",
+                $days < 7       => "within the next 7 days.",
+                $days <30       => "within the next 30 days.",
                 default         => "$days days to go until the premiere.",
             };
         }
